@@ -1496,76 +1496,6 @@
             .overall-stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
-        /* ========== DEBIT NOTE DASHBOARD STYLES ========== */
-        .dn-section {
-            background: linear-gradient(135deg, #1a0a2e 0%, #0d1b2a 100%);
-            border-radius: 12px; padding: 20px; margin-top: 20px;
-            border: 1px solid rgba(168,85,247,0.3);
-        }
-        .dn-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
-        .dn-title { font-size: 16px; font-weight: 700; color: #c084fc; letter-spacing: 0.5px; }
-        .dn-filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-        .dn-filter-btn {
-            padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(168,85,247,0.3);
-            background: rgba(168,85,247,0.08); color: #a78bfa; font-size: 11px; cursor: pointer; transition: all 0.2s;
-        }
-        .dn-filter-btn:hover { background: rgba(168,85,247,0.15); border-color: rgba(168,85,247,0.5); }
-        .dn-filter-btn.active { background: rgba(168,85,247,0.3); border-color: #a78bfa; color: #e9d5ff; font-weight: 600; }
-        .dn-stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 18px; }
-        .dn-stat-card {
-            background: rgba(168,85,247,0.06); border: 1px solid rgba(168,85,247,0.15);
-            border-radius: 10px; padding: 14px; text-align: center; transition: all 0.2s;
-        }
-        .dn-stat-card:hover { border-color: rgba(168,85,247,0.4); transform: translateY(-1px); }
-        .dn-stat-card .dn-stat-value { font-size: 22px; font-weight: 700; color: #e9d5ff; }
-        .dn-stat-card .dn-stat-label { font-size: 10px; color: #8b8ba3; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
-        .dn-stat-card .dn-stat-sub { font-size: 10px; color: #a78bfa; margin-top: 2px; }
-        .dn-charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px; }
-        .dn-chart-box {
-            background: rgba(15,23,42,0.6); border: 1px solid rgba(168,85,247,0.15);
-            border-radius: 10px; padding: 16px; position: relative;
-        }
-        .dn-chart-box h4 { font-size: 12px; color: #a78bfa; margin: 0 0 12px; font-weight: 600; }
-        .dn-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 600; }
-        .dn-badge.pending { background: rgba(245,158,11,0.2); color: #fbbf24; }
-        .dn-badge.approved { background: rgba(16,185,129,0.2); color: #34d399; }
-        .dn-badge.breached { background: rgba(239,68,68,0.2); color: #f87171; }
-        .dn-badge.high { background: rgba(239,68,68,0.2); color: #f87171; }
-        .dn-badge.medium { background: rgba(245,158,11,0.2); color: #fbbf24; }
-        .dn-badge.low { background: rgba(16,185,129,0.2); color: #34d399; }
-        .dn-badge.l1 { background: rgba(59,130,246,0.2); color: #60a5fa; }
-        .dn-badge.l2 { background: rgba(168,85,247,0.2); color: #c084fc; }
-        .dn-badge.settled { background: rgba(16,185,129,0.2); color: #34d399; }
-        .dn-table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid rgba(168,85,247,0.15); }
-        .dn-table { width: 100%; border-collapse: collapse; font-size: 11px; min-width: 1100px; }
-        .dn-table th {
-            background: rgba(168,85,247,0.12); color: #c084fc; padding: 10px 8px; text-align: left;
-            font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
-            border-bottom: 1px solid rgba(168,85,247,0.2); cursor: pointer; white-space: nowrap;
-        }
-        .dn-table th:hover { background: rgba(168,85,247,0.2); }
-        .dn-table td { padding: 9px 8px; border-bottom: 1px solid rgba(168,85,247,0.08); color: #c8c8e0; white-space: nowrap; }
-        .dn-table tr:hover td { background: rgba(168,85,247,0.06); }
-        .dn-dept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
-        .dn-dept-card {
-            background: rgba(15,23,42,0.6); border: 1px solid rgba(168,85,247,0.15);
-            border-radius: 10px; padding: 16px;
-        }
-        .dn-dept-card h4 { font-size: 12px; color: #a78bfa; margin: 0 0 12px; font-weight: 600; }
-        .dn-mini-table { width: 100%; border-collapse: collapse; font-size: 11px; }
-        .dn-mini-table th {
-            background: rgba(168,85,247,0.08); color: #a78bfa; padding: 7px 8px; text-align: left;
-            font-weight: 600; font-size: 10px; text-transform: uppercase; border-bottom: 1px solid rgba(168,85,247,0.15);
-        }
-        .dn-mini-table td { padding: 7px 8px; border-bottom: 1px solid rgba(168,85,247,0.06); color: #c8c8e0; }
-        .dn-loading { text-align: center; padding: 40px; color: #a78bfa; font-size: 14px; }
-        .dn-error { text-align: center; padding: 20px; color: #f87171; font-size: 13px; background: rgba(239,68,68,0.08); border-radius: 8px; margin: 10px 0; }
-        @media (max-width: 1000px) {
-            .dn-stats-grid { grid-template-columns: repeat(3, 1fr); }
-            .dn-charts-row, .dn-dept-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) { .dn-stats-grid { grid-template-columns: repeat(2, 1fr); } }
-
         /* AP Management Score Styles */
         .gmi-score-section {
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
@@ -1965,11 +1895,6 @@
                 <span>GetMyInvoices AP Data</span>
                 <span id="tabGMIBadge" style="display:none;background:rgba(99,102,241,0.3);color:#a5b4fc;font-size:9px;padding:2px 8px;border-radius:10px;font-weight:600;letter-spacing:0.3px;">ACTIVE</span>
             </button>
-            <button onclick="switchDashboardSection('dn')" id="tabDN" class="section-tab" style="flex:1;padding:16px 20px;border-radius:12px;border:none;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#6b7280;">
-                <span style="font-size:18px;">📝</span>
-                <span>Debit Note Data</span>
-                <span id="tabDNBadge" style="display:none;background:rgba(168,85,247,0.3);color:#d8b4fe;font-size:9px;padding:2px 8px;border-radius:10px;font-weight:600;letter-spacing:0.3px;">ACTIVE</span>
-            </button>
             <button onclick="switchDashboardSection('payment')" id="tabPayment" class="section-tab" style="flex:1;padding:16px 20px;border-radius:12px;border:none;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#6b7280;">
                 <span style="font-size:18px;">💰</span>
                 <span>Payment Planner</span>
@@ -2311,7 +2236,6 @@
                     </span>
                 </div>
                 <div class="gmi-connect-form" id="gmiConnectForm">
-                    <input type="text" class="gmi-api-input" id="gmiApiKey" placeholder="Enter API Key">
                     <button class="gmi-connect-btn" onclick="connectGMI()">Refresh Data</button>
                     <span style="color:#6b6b80;margin:0 5px;">or</span>
                     <label class="gmi-connect-btn" style="background:#3b82f6;cursor:pointer;">
@@ -2688,187 +2612,6 @@
         </div>
         </div><!-- END GETMYINVOICES AP DATA SECTION -->
 
-        <!-- ========== DEBIT NOTE DASHBOARD SECTION ========== -->
-        <div id="dn-dashboard-section" style="display:none;">
-            <div class="dn-section">
-                <!-- Header with title and actions -->
-                <div class="dn-header">
-                    <div class="dn-title">📝 DEBIT NOTE APPROVAL TRACKING DASHBOARD <span style="font-size:11px;font-weight:400;color:#8b8ba3;margin-left:8px;">Shop LC GmbH</span></div>
-                    <div style="display:flex;gap:8px;align-items:center;">
-                        <button onclick="loadDebitNoteData()" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(168,85,247,0.3);background:rgba(168,85,247,0.15);color:#c084fc;font-size:11px;cursor:pointer;" title="Reload data from OneDrive">🔄 Refresh</button>
-                        <button onclick="exportDNToExcel()" style="padding:6px 14px;border-radius:20px;border:1px solid rgba(16,185,129,0.3);background:rgba(16,185,129,0.08);color:#34d399;font-size:11px;cursor:pointer;">📥 Export</button>
-                    </div>
-                </div>
-
-                <!-- ===== COMPREHENSIVE FILTER BAR ===== -->
-                <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px;padding:14px;background:rgba(168,85,247,0.04);border:1px solid rgba(168,85,247,0.12);border-radius:10px;">
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Status</label>
-                        <select id="dnFilterStatus" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All Status</option>
-                            <option value="pending_l1">Pending L1 (Dept)</option>
-                            <option value="pending_l2">Pending L2 (Finance)</option>
-                            <option value="approved">L1 Approved</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Vendor</label>
-                        <select id="dnVendorFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All Vendors</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Department</label>
-                        <select id="dnDeptFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All Departments</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Approver</label>
-                        <select id="dnApproverFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All Approvers</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Reason</label>
-                        <select id="dnReasonFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All Reasons</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">SLA</label>
-                        <select id="dnSLAFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All</option>
-                            <option value="breached">SLA Breached</option>
-                            <option value="within">Within SLA</option>
-                        </select>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:6px;">
-                        <label style="font-size:10px;color:#8b8ba3;text-transform:uppercase;letter-spacing:0.5px;">Aging</label>
-                        <select id="dnAgingFilter" onchange="renderDNDashboard()" style="background:#1a0a2e;border:1px solid rgba(168,85,247,0.25);color:#c084fc;padding:5px 10px;border-radius:6px;font-size:11px;cursor:pointer;">
-                            <option value="all">All</option>
-                            <option value="0-30">0-30 Days</option>
-                            <option value="31-60">31-60 Days</option>
-                            <option value="61-90">61-90 Days</option>
-                            <option value="91-180">91-180 Days</option>
-                            <option value="180+">180+ Days</option>
-                        </select>
-                    </div>
-                    <button onclick="resetDNFilters()" style="padding:5px 12px;border-radius:6px;border:1px solid rgba(239,68,68,0.3);background:rgba(239,68,68,0.08);color:#f87171;font-size:10px;cursor:pointer;margin-left:auto;">✕ Reset Filters</button>
-                </div>
-
-                <!-- KPI Stat Cards -->
-                <div class="dn-stats-grid" id="dnStatsGrid">
-                    <div class="dn-stat-card" style="border-left:3px solid #a855f7;"><div class="dn-stat-value" id="dnTotalCount">--</div><div class="dn-stat-label">Total DNs</div><div class="dn-stat-sub" id="dnTotalValue">--</div></div>
-                    <div class="dn-stat-card" style="border-left:3px solid #f59e0b;"><div class="dn-stat-value" id="dnPendingCount" style="color:#fbbf24;">--</div><div class="dn-stat-label">Pending</div><div class="dn-stat-sub" id="dnPendingValue">--</div></div>
-                    <div class="dn-stat-card" style="border-left:3px solid #10b981;"><div class="dn-stat-value" id="dnApprovedCount" style="color:#34d399;">--</div><div class="dn-stat-label">Approved (L1)</div><div class="dn-stat-sub" id="dnApprovedValue">--</div></div>
-                    <div class="dn-stat-card" style="border-left:3px solid #ef4444;"><div class="dn-stat-value" id="dnSLABreachedCount" style="color:#f87171;">--</div><div class="dn-stat-label">SLA Breached</div><div class="dn-stat-sub" id="dnSLABreachedValue">--</div></div>
-                    <div class="dn-stat-card" style="border-left:3px solid #3b82f6;"><div class="dn-stat-value" id="dnAvgDays" style="color:#60a5fa;">--</div><div class="dn-stat-label">Avg Days Open</div><div class="dn-stat-sub" id="dnAvgDaysSub">processing time</div></div>
-                    <div class="dn-stat-card" style="border-left:3px solid #06b6d4;"><div class="dn-stat-value" id="dnSettledCount" style="color:#22d3ee;">--</div><div class="dn-stat-label">Settled</div><div class="dn-stat-sub" id="dnSettledValue">--</div></div>
-                </div>
-
-                <!-- ===== BOTTLENECK & SLA ALERT PANEL ===== -->
-                <div id="dnBottleneckPanel" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px;">
-                    <!-- Bottleneck Alert -->
-                    <div style="background:linear-gradient(135deg,rgba(239,68,68,0.08),rgba(239,68,68,0.02));border:1px solid rgba(239,68,68,0.2);border-radius:10px;padding:16px;">
-                        <h4 style="font-size:13px;color:#f87171;margin:0 0 12px;font-weight:700;">🚨 BOTTLENECK ANALYSIS — Where Are DNs Stuck?</h4>
-                        <div id="dnBottleneckContent" style="font-size:12px;color:#c8c8e0;"></div>
-                    </div>
-                    <!-- SLA Summary -->
-                    <div style="background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(245,158,11,0.02));border:1px solid rgba(245,158,11,0.2);border-radius:10px;padding:16px;">
-                        <h4 style="font-size:13px;color:#fbbf24;margin:0 0 12px;font-weight:700;">⏱️ SLA COMPLIANCE — Breach Summary</h4>
-                        <div id="dnSLAContent" style="font-size:12px;color:#c8c8e0;"></div>
-                    </div>
-                </div>
-
-                <!-- ===== APPROVER DELAY HEATMAP ===== -->
-                <div style="background:rgba(15,23,42,0.6);border:1px solid rgba(168,85,247,0.15);border-radius:10px;padding:16px;margin-bottom:18px;">
-                    <h4 style="font-size:13px;color:#c084fc;margin:0 0 14px;font-weight:700;">👤 APPROVER PERFORMANCE — Who Is Delaying?</h4>
-                    <div id="dnApproverHeatmap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;"></div>
-                </div>
-
-                <!-- Charts Row -->
-                <div class="dn-charts-row">
-                    <div class="dn-chart-box">
-                        <h4>📊 DN VALUE BY VENDOR</h4>
-                        <div style="position:relative;height:260px;"><canvas id="dnVendorChart"></canvas></div>
-                    </div>
-                    <div class="dn-chart-box">
-                        <h4>📁 DN VALUE BY REASON CATEGORY</h4>
-                        <div style="position:relative;height:260px;"><canvas id="dnReasonChart"></canvas></div>
-                    </div>
-                </div>
-
-                <!-- Aging + Approval Pipeline -->
-                <div class="dn-charts-row" style="margin-top:0;">
-                    <div class="dn-chart-box">
-                        <h4>⏱️ AGING DISTRIBUTION — Days Pending</h4>
-                        <div style="position:relative;height:240px;"><canvas id="dnAgingChart"></canvas></div>
-                    </div>
-                    <div class="dn-chart-box">
-                        <h4>🔄 APPROVAL PIPELINE — L1 vs L2 Status</h4>
-                        <div style="position:relative;height:240px;"><canvas id="dnPipelineChart"></canvas></div>
-                    </div>
-                </div>
-
-                <!-- Search -->
-                <div style="margin-bottom:12px;">
-                    <input type="text" id="dnSearchInput" placeholder="🔍 Search by DN #, vendor, invoice #, reason, approver, department..." oninput="renderDNDashboard()" style="width:100%;padding:10px 15px;background:#1a0a2e;border:1px solid rgba(168,85,247,0.3);border-radius:8px;color:#e9d5ff;font-size:12px;outline:none;">
-                </div>
-
-                <!-- Main Table -->
-                <div class="dn-table-wrap">
-                    <table class="dn-table">
-                        <thead id="dnTableHead">
-                            <tr>
-                                <th onclick="sortDNTable('dnNo')">DN No. ↕</th>
-                                <th onclick="sortDNTable('dnDate')">DN Date ↕</th>
-                                <th onclick="sortDNTable('vendor')">Vendor ↕</th>
-                                <th onclick="sortDNTable('invoiceNo')">Invoice No.</th>
-                                <th onclick="sortDNTable('dnAmount')">DN Amt (€) ↕</th>
-                                <th onclick="sortDNTable('reason')">Reason</th>
-                                <th onclick="sortDNTable('department')">Dept</th>
-                                <th onclick="sortDNTable('l1Approver')">L1 Approver</th>
-                                <th onclick="sortDNTable('overallStatus')">Status</th>
-                                <th onclick="sortDNTable('daysPending')">Days ↕</th>
-                                <th onclick="sortDNTable('slaStatus')">SLA</th>
-                                <th>Reason Details</th>
-                            </tr>
-                        </thead>
-                        <tbody id="dnTableBody">
-                            <tr><td colspan="12" class="dn-loading">Loading debit note data...</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Department & Vendor Summary -->
-                <div class="dn-dept-grid">
-                    <div class="dn-dept-card">
-                        <h4>🏢 DEPARTMENT-WISE PENDENCY</h4>
-                        <table class="dn-mini-table">
-                            <thead><tr><th>Department</th><th>L1 Approver</th><th>DNs</th><th>Value (€)</th><th>Pending</th><th>Avg Days</th><th>Max Days</th><th>SLA Status</th></tr></thead>
-                            <tbody id="dnDeptBody"></tbody>
-                        </table>
-                    </div>
-                    <div class="dn-dept-card">
-                        <h4>🏭 VENDOR-WISE EXPOSURE</h4>
-                        <table class="dn-mini-table">
-                            <thead><tr><th>Vendor</th><th>DNs</th><th>Value (€)</th><th>Pending</th><th>% of Total</th><th>Avg Days</th><th>Oldest DN</th></tr></thead>
-                            <tbody id="dnVendorBody"></tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div style="margin-top:14px;padding:10px 14px;background:rgba(168,85,247,0.06);border-radius:8px;border:1px solid rgba(168,85,247,0.12);font-size:11px;color:#8b8ba3;">
-                    📂 Data Source: <a href="https://vglgroup-my.sharepoint.com/:x:/g/personal/aniket_sharma_shoplc_de/IQBhdECh0DSJRqTBWZdKJ_mpARJE1n5OqMWZAQRa7DV9A8o?e=4S3xgK" target="_blank" style="color:#a78bfa;text-decoration:underline;">OneDrive — Debit Note Tracker.xlsx</a>
-                    | Last refreshed: <span id="dnLastRefresh">--</span>
-                </div>
-            </div>
-        </div>
-
-
-
-
     <!-- ========== PAYMENT PLANNER SECTION ========== -->
         <div id="payment-dashboard-section" style="display:none;">
             <div style="max-width:1400px;margin:0 auto;">
@@ -3005,7 +2748,7 @@
                     <div style="font-size:11px;color:#8b8ba3;margin-top:3px;">Upload data files to refresh the dashboard. Team members can upload once and data syncs for all.</div>
                 </div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
                 <!-- Open Transactions -->
                 <div id="bottomUploadTxn" style="background:rgba(59,130,246,0.06);border:2px dashed rgba(59,130,246,0.25);border-radius:10px;padding:20px;text-align:center;cursor:pointer;transition:all 0.2s;" onclick="document.getElementById('bottomTxnFile').click()" onmouseover="this.style.borderColor='rgba(59,130,246,0.5)';this.style.background='rgba(59,130,246,0.1)'" onmouseout="this.style.borderColor='rgba(59,130,246,0.25)';this.style.background='rgba(59,130,246,0.06)'">
                     <div style="font-size:28px;margin-bottom:8px;">📄</div>
@@ -3022,19 +2765,11 @@
                     <div id="bottomVendorStatus" style="font-size:10px;color:#4b5563;margin-top:8px;padding:4px 10px;background:rgba(16,185,129,0.1);border-radius:6px;display:inline-block;">Click to upload .xlsx</div>
                     <input type="file" id="bottomVendorFile" accept=".xlsx,.xls" style="display:none;" onchange="handleBottomVendorUpload(this)">
                 </div>
-                <!-- Debit Note Tracker -->
-                <div id="bottomUploadDN" style="background:rgba(168,85,247,0.06);border:2px dashed rgba(168,85,247,0.25);border-radius:10px;padding:20px;text-align:center;cursor:pointer;transition:all 0.2s;" onclick="document.getElementById('bottomDNFile').click()" onmouseover="this.style.borderColor='rgba(168,85,247,0.5)';this.style.background='rgba(168,85,247,0.1)'" onmouseout="this.style.borderColor='rgba(168,85,247,0.25)';this.style.background='rgba(168,85,247,0.06)'">
-                    <div style="font-size:28px;margin-bottom:8px;">📝</div>
-                    <div style="font-size:13px;font-weight:600;color:#c084fc;">Debit Note Tracker</div>
-                    <div style="font-size:10px;color:#8b8ba3;margin-top:4px;">DN register with approval status</div>
-                    <div id="bottomDNStatus" style="font-size:10px;color:#4b5563;margin-top:8px;padding:4px 10px;background:rgba(168,85,247,0.1);border-radius:6px;display:inline-block;">Click to upload .xlsx</div>
-                    <input type="file" id="bottomDNFile" accept=".xlsx,.xls" style="display:none;" onchange="handleBottomDNUpload(this)">
-                </div>
             </div>
             <!-- Data Sync Status Panel -->
             <div id="uploadSyncStatus" style="margin-top:16px;padding:14px 16px;background:rgba(99,102,241,0.04);border:1px solid rgba(99,102,241,0.12);border-radius:8px;display:none;">
                 <div style="font-size:11px;font-weight:700;color:#818cf8;margin-bottom:10px;letter-spacing:0.5px;">DATA SYNC STATUS</div>
-                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
                     <div style="display:flex;align-items:center;gap:8px;">
                         <div id="syncDotERP" style="width:8px;height:8px;border-radius:50%;background:#4b5563;flex-shrink:0;"></div>
                         <div>
@@ -3047,13 +2782,6 @@
                         <div>
                             <div style="font-size:11px;color:#e2e8f0;font-weight:500;">Vendor Master</div>
                             <div id="syncInfoVendor" style="font-size:10px;color:#6b7280;">Not loaded</div>
-                        </div>
-                    </div>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                        <div id="syncDotDN" style="width:8px;height:8px;border-radius:50%;background:#4b5563;flex-shrink:0;"></div>
-                        <div>
-                            <div style="font-size:11px;color:#e2e8f0;font-weight:500;">Debit Note Tracker</div>
-                            <div id="syncInfoDN" style="font-size:10px;color:#6b7280;">No data loaded</div>
                         </div>
                     </div>
                 </div>
@@ -3136,9 +2864,6 @@
             }
 
             db = firebase.database();
-
-            // Load GMI API key from Firebase for all users
-            loadGMIApiKeyFromFirebase();
 
             db.ref('vendorAging').on('value', snap => {
 
@@ -3363,22 +3088,6 @@
         }
     }
 
-    function handleBottomDNUpload(input) {
-        if (input.files && input.files[0]) {
-            const card = document.getElementById('bottomUploadDN');
-            const status = document.getElementById('bottomDNStatus');
-            if (card) { card.style.borderColor = 'rgba(168,85,247,0.6)'; card.style.background = 'rgba(168,85,247,0.12)'; }
-            if (status) { status.textContent = '✓ ' + input.files[0].name; status.style.color = '#34d399'; }
-            // Store filename for upload history log
-            if (typeof _lastDNFileName !== 'undefined') _lastDNFileName = input.files[0].name;
-            else window._lastDNFileName = input.files[0].name;
-            // Use the existing DN handler
-            const reader = new FileReader();
-            reader.onload = function(e) { parseDNExcel(e.target.result); };
-            reader.readAsArrayBuffer(input.files[0]);
-        }
-    }
-
     // ========== DATA SYNC STATUS PANEL ==========
     function updateSyncStatus() {
         const panel = document.getElementById('uploadSyncStatus');
@@ -3408,18 +3117,6 @@
             if (vmInfo) vmInfo.textContent = 'Not loaded (optional)';
         }
 
-        // DN status
-        const dnDot = document.getElementById('syncDotDN');
-        const dnInfo = document.getElementById('syncInfoDN');
-        if (typeof DN_DATA !== 'undefined' && DN_DATA.length > 0) {
-            const refreshEl = document.getElementById('dnLastRefresh');
-            const refreshTime = refreshEl ? refreshEl.textContent : '-';
-            if (dnDot) dnDot.style.background = '#10b981';
-            if (dnInfo) dnInfo.textContent = DN_DATA.length + ' debit notes | Refreshed: ' + refreshTime;
-        } else {
-            if (dnDot) dnDot.style.background = '#4b5563';
-            if (dnInfo) dnInfo.textContent = 'No data loaded';
-        }
     }
 
     // ========== UPLOAD HISTORY LOG (Last 7 uploads — Firebase-persisted, non-clearable) ==========
@@ -3487,13 +3184,11 @@
 
         const typeIcons = {
             'Open Transactions': '📄',
-            'Vendor Master': '👥',
-            'Debit Note': '📝'
+            'Vendor Master': '👥'
         };
         const typeColors = {
             'Open Transactions': '#60a5fa',
-            'Vendor Master': '#34d399',
-            'Debit Note': '#c084fc'
+            'Vendor Master': '#34d399'
         };
 
         let html = '';
@@ -6117,39 +5812,10 @@
         }
     }
 
-    let GMI_API_KEY = localStorage.getItem('gmi_api_key') || '';
-
-    // Load API key from Firebase first, then fallback to localStorage
-    function loadGMIApiKeyFromFirebase() {
-        if (!db) return;
-        db.ref('gmiApiKey').once('value').then(snap => {
-            const savedKey = snap.val();
-            if (savedKey) {
-                GMI_API_KEY = savedKey;
-                localStorage.setItem('gmi_api_key', savedKey);
-                const gmiInput = document.getElementById('gmiApiKey');
-                if (gmiInput && !gmiInput.value) gmiInput.value = savedKey;
-            }
-        }).catch(err => console.warn('Could not load API key from Firebase:', err));
-    }
-
-    // Save API key to Firebase so all users get it
-    function saveGMIApiKeyToFirebase(apiKey) {
-        if (!db || !apiKey) return;
-        db.ref('gmiApiKey').set(apiKey)
-            .then(() => console.log('GMI API key synced to Firebase'))
-            .catch(err => console.warn('Could not save API key to Firebase:', err));
-    }
-
-    // Populate API key input on load (localStorage as immediate fallback, Firebase will overwrite if available)
-    document.addEventListener('DOMContentLoaded', function() {
-        if (GMI_API_KEY) {
-            const gmiInput = document.getElementById('gmiApiKey');
-            if (gmiInput) gmiInput.value = GMI_API_KEY;
-        }
-        // Try Firebase after a short delay (gives Firebase time to initialize)
-        setTimeout(loadGMIApiKeyFromFirebase, 1500);
-    });
+    // GMI API key is held server-side as a Netlify env var (GMI_API_KEY) and
+    // accessed only via /.netlify/functions/gmi-proxy. The key is no longer
+    // stored in Firebase or localStorage and never reaches the browser. To
+    // rotate it: `netlify env:set GMI_API_KEY <new-value> --context production`.
 
     let gmiCharts = { vendor: null, tag: null };
 
@@ -6545,77 +6211,41 @@
 
     async function connectGMI(silent = false) {
 
-        const apiKey = document.getElementById('gmiApiKey').value.trim();
-
-        if (!apiKey) {
-
-            if (!silent) showGMIStatus('Please enter API key', 'error');
-
-            return;
-
-        }
-
-        
-
         const btn = document.querySelector('.gmi-connect-btn');
 
         const loading = document.getElementById('gmiLoading');
 
         const content = document.getElementById('gmiContent');
 
-        
+
 
         btn.disabled = true;
 
-        btn.textContent = 'Connecting...';
+        btn.textContent = 'Refreshing...';
 
         loading.style.display = 'flex';
 
         content.classList.remove('active');
 
-        
+
 
         try {
 
-            // Test API connection (Note: May require CORS proxy for direct browser access)
+            // Verify the GMI proxy + upstream credentials before pulling data.
 
-            const statusResp = await fetch('https://api.getmyinvoices.com/accounts/v3/apiStatus', {
+            const statusResp = await fetch('/.netlify/functions/gmi-proxy?path=accounts/v3/apiStatus');
 
-                method: 'GET',
 
-                headers: { 'X-API-Key': apiKey, 'Content-Type': 'application/json' },
-
-                mode: 'cors'
-
-            });
-
-            
 
             if (!statusResp.ok) {
 
-                if (statusResp.status === 0 || statusResp.type === 'opaque') {
-
-                    throw new Error('CORS blocked. Use JSON import or configure proxy.');
-
-                }
-
-                throw new Error('Invalid API key (Status: ' + statusResp.status + ')');
+                throw new Error('GMI proxy error (Status: ' + statusResp.status + ')');
 
             }
 
-            
 
-            // Save API key (localStorage + Firebase for all users)
 
-            GMI_API_KEY = apiKey;
-
-            localStorage.setItem('gmi_api_key', apiKey);
-
-            saveGMIApiKeyToFirebase(apiKey);
-
-            
-
-            // Fetch all data
+            // Fetch all data via the proxy
 
             await Promise.all([
 
@@ -6665,7 +6295,7 @@
 
             showGMIStatus(err.message || 'Connection failed', 'error');
 
-            btn.textContent = 'Connect';
+            btn.textContent = 'Refresh Data';
 
             loading.style.display = 'none';
 
@@ -6707,9 +6337,7 @@
 
             const resp = await fetch(
 
-                `https://api.getmyinvoices.com/accounts/v3/documents?perPage=500&pageNumber=${page}&documentTypeFilter=INCOMING_INVOICE&archivedFilter=0`,
-
-                { headers: { 'X-API-Key': GMI_API_KEY, 'Content-Type': 'application/json' } }
+                `/.netlify/functions/gmi-proxy?path=accounts/v3/documents&perPage=500&pageNumber=${page}&documentTypeFilter=INCOMING_INVOICE&archivedFilter=0`
 
             );
 
@@ -6759,9 +6387,7 @@
 
             const resp = await fetch(
 
-                `https://api.getmyinvoices.com/accounts/v3/workflowApprovals?perPage=500&pageNumber=${page}`,
-
-                { headers: { 'X-API-Key': GMI_API_KEY, 'Content-Type': 'application/json' } }
+                `/.netlify/functions/gmi-proxy?path=accounts/v3/workflowApprovals&perPage=500&pageNumber=${page}`
 
             );
 
@@ -6799,9 +6425,7 @@
 
         const resp = await fetch(
 
-            'https://api.getmyinvoices.com/accounts/v3/companies?statusFilter=1',
-
-            { headers: { 'X-API-Key': GMI_API_KEY, 'Content-Type': 'application/json' } }
+            '/.netlify/functions/gmi-proxy?path=accounts/v3/companies&statusFilter=1'
 
         );
 
@@ -10157,45 +9781,38 @@
         const sections = {
             erp: document.getElementById('erp-dashboard-section'),
             gmi: document.getElementById('gmi-dashboard-section'),
-            dn: document.getElementById('dn-dashboard-section'),
             payment: document.getElementById('payment-dashboard-section')
         };
         const tabs = {
             erp: document.getElementById('tabERP'),
             gmi: document.getElementById('tabGMI'),
-            dn: document.getElementById('tabDN'),
             payment: document.getElementById('tabPayment')
         };
         const badges = {
             erp: document.getElementById('tabERPBadge'),
             gmi: document.getElementById('tabGMIBadge'),
-            dn: document.getElementById('tabDNBadge'),
             payment: document.getElementById('tabPaymentBadge')
         };
         const gradients = {
             erp: 'linear-gradient(135deg,rgba(59,130,246,0.2),rgba(59,130,246,0.1))',
             gmi: 'linear-gradient(135deg,rgba(99,102,241,0.2),rgba(99,102,241,0.1))',
-            dn: 'linear-gradient(135deg,rgba(168,85,247,0.2),rgba(168,85,247,0.1))',
             payment: 'linear-gradient(135deg,rgba(16,185,129,0.2),rgba(16,185,129,0.1))'
         };
-        const colors = { erp: '#60a5fa', gmi: '#818cf8', dn: '#c084fc', payment: '#34d399' };
+        const colors = { erp: '#60a5fa', gmi: '#818cf8', payment: '#34d399' };
         const shadows = {
             erp: '0 0 20px rgba(59,130,246,0.15),inset 0 1px 0 rgba(255,255,255,0.05)',
             gmi: '0 0 20px rgba(99,102,241,0.15),inset 0 1px 0 rgba(255,255,255,0.05)',
-            dn: '0 0 20px rgba(168,85,247,0.15),inset 0 1px 0 rgba(255,255,255,0.05)',
             payment: '0 0 20px rgba(16,185,129,0.15),inset 0 1px 0 rgba(255,255,255,0.05)'
         };
-        const separatorLabels = { erp: '📊 ERP AP Data', gmi: '🔗 GetMyInvoices AP Data', dn: '📝 Debit Note Data', payment: '💰 Payment Planner' };
+        const separatorLabels = { erp: '📊 ERP AP Data', gmi: '🔗 GetMyInvoices AP Data', payment: '💰 Payment Planner' };
         const separatorBg = {
             erp: 'rgba(59,130,246,0.08)',
             gmi: 'rgba(99,102,241,0.08)',
-            dn: 'rgba(168,85,247,0.08)',
             payment: 'rgba(16,185,129,0.08)'
         };
         const separatorBorder = {
             erp: 'rgba(59,130,246,0.2)',
             gmi: 'rgba(99,102,241,0.2)',
-            dn: 'rgba(168,85,247,0.2)',
             payment: 'rgba(16,185,129,0.2)'
         };
 
@@ -10220,10 +9837,6 @@
             sepLabel.style.borderColor = separatorBorder[section];
         }
 
-        // Load DN data on first switch to DN tab
-        if (section === 'dn' && DN_DATA.length === 0) {
-            loadDebitNoteData();
-        }
         // Load payment plan from Firebase on first switch + show reminders
         if (section === 'payment') {
             loadPaymentPlanFromFirebase();
@@ -10235,709 +9848,7 @@
                 Object.values(Chart.instances || {}).forEach(c => { try { c.resize(); } catch(e) {} });
             }, 100);
         }
-        if (section === 'dn') {
-            setTimeout(() => {
-                if (dnVendorChart) dnVendorChart.resize();
-                if (dnReasonChart) dnReasonChart.resize();
-                if (dnAgingChart) dnAgingChart.resize();
-                if (typeof dnPipelineChart !== 'undefined' && dnPipelineChart) dnPipelineChart.resize();
-            }, 100);
-        }
     }
-
-    // ========== DEBIT NOTE DASHBOARD ==========
-    const DN_ONEDRIVE_URL = 'https://vglgroup-my.sharepoint.com/:x:/g/personal/aniket_sharma_shoplc_de/IQBhdECh0DSJRqTBWZdKJ_mpARJE1n5OqMWZAQRa7DV9A8o?e=4S3xgK';
-    let DN_DATA = [];
-    let dnStatusFilter = 'all';
-    let dnSort = { field: 'daysPending', dir: 'desc' };
-    let dnVendorChart = null;
-    let dnReasonChart = null;
-    let dnAgingChart = null;
-
-    function loadDebitNoteData() {
-        // If data already loaded from Firebase, just render
-        if (DN_DATA.length > 0) {
-            populateDNFilters();
-            renderDNDashboard();
-            return;
-        }
-
-        const tbody = document.getElementById('dnTableBody');
-        if (tbody) tbody.innerHTML = '<tr><td colspan="12" class="dn-loading">⏳ Loading debit note data...</td></tr>';
-
-        // Step 1: Try Firebase first (fastest, already synced by team)
-        if (db) {
-            db.ref('ap_dashboard/dn_data').once('value', snap => {
-                const val = snap.val();
-                if (val && val.data) {
-                    try {
-                        const parsed = JSON.parse(val.data);
-                        if (parsed.length > 0) {
-                            DN_DATA = parsed;
-                            console.log('📝 Loaded', DN_DATA.length, 'DNs from Firebase');
-                            const refreshEl = document.getElementById('dnLastRefresh');
-                            if (refreshEl) refreshEl.textContent = new Date(val.updatedAt).toLocaleString();
-                            populateDNFilters();
-                            renderDNDashboard();
-                            return;
-                        }
-                    } catch (e) { console.warn('DN Firebase parse error:', e); }
-                }
-                // Firebase empty → show upload prompt
-                showDNUploadPrompt(tbody);
-            });
-        } else {
-            showDNUploadPrompt(tbody);
-        }
-    }
-
-    function showDNUploadPrompt(tbody) {
-        if (tbody) tbody.innerHTML = '<tr><td colspan="12" class="dn-error">' +
-            '<div style="font-size:16px;margin-bottom:8px;">📝 No Debit Note Data Available</div>' +
-            '<div style="font-size:12px;color:#8b8ba3;margin-bottom:14px;">Upload the Debit Note Tracker file using the <strong>File Upload Center</strong> at the bottom of the page, or upload here:</div>' +
-            '<label style="display:inline-block;margin-top:4px;padding:10px 24px;background:rgba(168,85,247,0.2);border:1px solid #a78bfa;border-radius:8px;color:#c084fc;cursor:pointer;font-size:12px;font-weight:600;">' +
-            '📂 Upload Debit Note Tracker.xlsx' +
-            '<input type="file" id="dnFileInput" accept=".xlsx,.xls" style="display:none;" onchange="handleDNFileUpload(event)">' +
-            '</label>' +
-            '<br><span style="font-size:10px;color:#8b8ba3;margin-top:8px;display:inline-block;">Or download from <a href="' + DN_ONEDRIVE_URL + '" target="_blank" style="color:#a78bfa;">OneDrive</a> first</span>' +
-            '</td></tr>';
-    }
-
-    function handleDNFileUpload(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = function(e) { parseDNExcel(e.target.result); };
-        reader.readAsArrayBuffer(file);
-    }
-
-    function parseDNExcel(buf) {
-        try {
-            const wb = XLSX.read(buf, { type: 'array', cellDates: true });
-            const sheetName = wb.SheetNames.find(n => n.toLowerCase().includes('register') || n.toLowerCase().includes('dn')) || wb.SheetNames[0];
-            const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { defval: '' });
-
-            DN_DATA = rows.map(r => ({
-                dnNo: r['DN No.'] || '',
-                dnDate: excelDateToStr(r['DN Date']),
-                vendor: r['Vendor Name'] || '',
-                invoiceNo: r['Invoice No.'] || '',
-                invoiceDate: excelDateToStr(r['Invoice Date']),
-                invoiceAmount: parseFloat(r['Invoice Amount (€)']) || 0,
-                dnAmount: parseFloat(r['DN Amount (€)']) || 0,
-                reasonCategory: r['DN Reason Category'] || 'Other',
-                reasonDetails: r['DN Reason Details'] || '',
-                department: r['Department'] || '',
-                l1Approver: r['L1 Approver'] || '',
-                l1Status: r['L1 Status'] || '',
-                l1Date: excelDateToStr(r['L1 Date']),
-                l1Comments: r['L1 Comments'] || '',
-                l2Approver: r['L2 Approver'] || '',
-                l2Status: r['L2 Status'] || '',
-                l2Date: excelDateToStr(r['L2 Date']),
-                overallStatus: r['Overall Status'] || '',
-                daysPending: parseInt(r['Days Pending']) || 0,
-                priority: r['Priority'] || '',
-                slaStatus: r['SLA Status'] || '',
-                settlementStatus: r['Settlement Status'] || '',
-                settlementDate: excelDateToStr(r['Settlement Date']),
-                remarks: r['Remarks'] || '',
-                totalDays: parseInt(r['Total Days']) || 0
-            })).filter(d => d.dnNo);
-
-            console.log('📝 Loaded', DN_DATA.length, 'debit notes');
-            document.getElementById('dnLastRefresh').textContent = new Date().toLocaleString();
-            populateDNFilters();
-            renderDNDashboard();
-            if (typeof updateSyncStatus === 'function') updateSyncStatus();
-        } catch (err) {
-            console.error('DN Excel parse error:', err);
-            const tbody = document.getElementById('dnTableBody');
-            if (tbody) tbody.innerHTML = '<tr><td colspan="12" class="dn-error">❌ Error parsing Excel: ' + err.message + '</td></tr>';
-        }
-    }
-
-    function excelDateToStr(val) {
-        if (!val) return '';
-        if (val instanceof Date) return val.toISOString().substring(0, 10);
-        if (typeof val === 'string' && val.includes('-')) return val.substring(0, 10);
-        if (typeof val === 'number') {
-            const d = new Date((val - 25569) * 86400000);
-            return d.toISOString().substring(0, 10);
-        }
-        return String(val);
-    }
-
-    function populateDNFilters() {
-        const fill = (id, values) => {
-            const sel = document.getElementById(id);
-            if (!sel) return;
-            const current = sel.value;
-            const first = sel.options[0]?.textContent || 'All';
-            sel.innerHTML = '<option value="all">' + first + '</option>' + values.map(v => '<option value="' + v + '">' + v + '</option>').join('');
-            sel.value = current || 'all';
-        };
-        fill('dnVendorFilter', [...new Set(DN_DATA.map(d => d.vendor).filter(Boolean))].sort());
-        fill('dnDeptFilter', [...new Set(DN_DATA.map(d => d.department).filter(Boolean))].sort());
-        fill('dnApproverFilter', [...new Set(DN_DATA.map(d => d.l1Approver).filter(Boolean))].sort());
-        fill('dnReasonFilter', [...new Set(DN_DATA.map(d => d.reasonCategory).filter(Boolean))].sort());
-    }
-    // Keep old name for compatibility
-    function populateDNVendorFilter() { populateDNFilters(); }
-
-    function resetDNFilters() {
-        ['dnFilterStatus','dnVendorFilter','dnDeptFilter','dnApproverFilter','dnReasonFilter','dnSLAFilter','dnAgingFilter'].forEach(id => {
-            const el = document.getElementById(id); if (el) el.value = 'all';
-        });
-        const s = document.getElementById('dnSearchInput'); if (s) s.value = '';
-        renderDNDashboard();
-    }
-
-    function sortDNTable(field) {
-        if (dnSort.field === field) { dnSort.dir = dnSort.dir === 'asc' ? 'desc' : 'asc'; }
-        else { dnSort.field = field; dnSort.dir = 'desc'; }
-        renderDNDashboard();
-    }
-
-    function getFilteredDN() {
-        let data = [...DN_DATA];
-        const status = document.getElementById('dnFilterStatus')?.value || 'all';
-        const vendor = document.getElementById('dnVendorFilter')?.value || 'all';
-        const dept = document.getElementById('dnDeptFilter')?.value || 'all';
-        const approver = document.getElementById('dnApproverFilter')?.value || 'all';
-        const reason = document.getElementById('dnReasonFilter')?.value || 'all';
-        const sla = document.getElementById('dnSLAFilter')?.value || 'all';
-        const aging = document.getElementById('dnAgingFilter')?.value || 'all';
-        const search = (document.getElementById('dnSearchInput')?.value || '').toLowerCase().trim();
-
-        if (status === 'pending_l1') data = data.filter(d => d.overallStatus.toLowerCase().includes('l1'));
-        else if (status === 'pending_l2') data = data.filter(d => d.overallStatus.toLowerCase().includes('l2'));
-        else if (status === 'approved') data = data.filter(d => d.l1Status.toLowerCase() === 'approved');
-
-        if (vendor !== 'all') data = data.filter(d => d.vendor === vendor);
-        if (dept !== 'all') data = data.filter(d => d.department === dept);
-        if (approver !== 'all') data = data.filter(d => d.l1Approver === approver);
-        if (reason !== 'all') data = data.filter(d => d.reasonCategory === reason);
-        if (sla === 'breached') data = data.filter(d => d.slaStatus.toLowerCase().includes('breached'));
-        else if (sla === 'within') data = data.filter(d => !d.slaStatus.toLowerCase().includes('breached'));
-
-        if (aging === '0-30') data = data.filter(d => d.daysPending <= 30);
-        else if (aging === '31-60') data = data.filter(d => d.daysPending > 30 && d.daysPending <= 60);
-        else if (aging === '61-90') data = data.filter(d => d.daysPending > 60 && d.daysPending <= 90);
-        else if (aging === '91-180') data = data.filter(d => d.daysPending > 90 && d.daysPending <= 180);
-        else if (aging === '180+') data = data.filter(d => d.daysPending > 180);
-
-        if (search) {
-            data = data.filter(d =>
-                d.dnNo.toLowerCase().includes(search) || d.vendor.toLowerCase().includes(search) ||
-                d.invoiceNo.toLowerCase().includes(search) || d.reasonCategory.toLowerCase().includes(search) ||
-                d.reasonDetails.toLowerCase().includes(search) || d.department.toLowerCase().includes(search) ||
-                d.overallStatus.toLowerCase().includes(search) || d.l1Approver.toLowerCase().includes(search)
-            );
-        }
-
-        data.sort((a, b) => {
-            let av, bv;
-            switch (dnSort.field) {
-                case 'dnNo': av = a.dnNo; bv = b.dnNo; break;
-                case 'dnDate': av = new Date(a.dnDate || 0); bv = new Date(b.dnDate || 0); break;
-                case 'vendor': av = a.vendor; bv = b.vendor; break;
-                case 'dnAmount': av = a.dnAmount; bv = b.dnAmount; break;
-                case 'reason': av = a.reasonCategory; bv = b.reasonCategory; break;
-                case 'department': av = a.department; bv = b.department; break;
-                case 'l1Approver': av = a.l1Approver; bv = b.l1Approver; break;
-                case 'overallStatus': av = a.overallStatus; bv = b.overallStatus; break;
-                case 'slaStatus': av = a.slaStatus; bv = b.slaStatus; break;
-                default: av = a.daysPending; bv = b.daysPending;
-            }
-            if (typeof av === 'string') return dnSort.dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
-            return dnSort.dir === 'asc' ? av - bv : bv - av;
-        });
-        return data;
-    }
-
-    function renderDNDashboard() {
-        const filtered = getFilteredDN();
-        const all = DN_DATA;
-        const fmt = v => '€' + v.toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-
-        // KPI Stats (based on filtered data for relevance)
-        const totalAmt = filtered.reduce((s, d) => s + d.dnAmount, 0);
-        const pending = filtered.filter(d => d.overallStatus.toLowerCase().includes('pending'));
-        const approved = filtered.filter(d => d.l1Status.toLowerCase() === 'approved');
-        const breached = filtered.filter(d => d.slaStatus.toLowerCase().includes('breached'));
-        const avgDays = filtered.length > 0 ? Math.round(filtered.reduce((s, d) => s + d.daysPending, 0) / filtered.length) : 0;
-        const settled = filtered.filter(d => d.settlementStatus.toLowerCase() === 'settled' || d.settlementStatus.toLowerCase() === 'completed');
-
-        document.getElementById('dnTotalCount').textContent = filtered.length;
-        document.getElementById('dnTotalValue').textContent = fmt(totalAmt);
-        document.getElementById('dnPendingCount').textContent = pending.length;
-        document.getElementById('dnPendingValue').textContent = fmt(pending.reduce((s, d) => s + d.dnAmount, 0));
-        document.getElementById('dnApprovedCount').textContent = approved.length;
-        document.getElementById('dnApprovedValue').textContent = fmt(approved.reduce((s, d) => s + d.dnAmount, 0));
-        document.getElementById('dnSLABreachedCount').textContent = breached.length;
-        document.getElementById('dnSLABreachedValue').textContent = fmt(breached.reduce((s, d) => s + d.dnAmount, 0));
-        document.getElementById('dnAvgDays').textContent = avgDays;
-        document.getElementById('dnSettledCount').textContent = settled.length;
-        document.getElementById('dnSettledValue').textContent = fmt(settled.reduce((s, d) => s + d.dnAmount, 0));
-
-        // Bottleneck Analysis
-        renderDNBottleneck(all);
-        // SLA Summary
-        renderDNSLASummary(all);
-        // Approver Heatmap
-        renderDNApproverHeatmap(all);
-
-        // Table
-        const tbody = document.getElementById('dnTableBody');
-        if (filtered.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="12" style="text-align:center;padding:30px;color:#8b8ba3;">No debit notes match the current filters</td></tr>';
-        } else {
-            tbody.innerHTML = filtered.map(d => {
-                const statusBadge = d.overallStatus.toLowerCase().includes('l1') ? '<span class="dn-badge l1">' + d.overallStatus + '</span>' :
-                    d.overallStatus.toLowerCase().includes('l2') ? '<span class="dn-badge l2">' + d.overallStatus + '</span>' :
-                    '<span class="dn-badge approved">' + d.overallStatus + '</span>';
-                const slaBadge = d.slaStatus.toLowerCase().includes('breached') ?
-                    '<span class="dn-badge breached" title="' + d.daysPending + ' days pending">BREACHED</span>' :
-                    '<span class="dn-badge low">OK</span>';
-                const daysBadge = d.daysPending > 180 ? '<span class="dn-badge high" style="font-weight:700;">' + d.daysPending + 'd</span>' :
-                    d.daysPending > 90 ? '<span class="dn-badge high">' + d.daysPending + 'd</span>' :
-                    d.daysPending > 30 ? '<span class="dn-badge medium">' + d.daysPending + 'd</span>' :
-                    '<span class="dn-badge low">' + d.daysPending + 'd</span>';
-                const reasonShort = d.reasonDetails.length > 40 ? d.reasonDetails.substring(0, 40) + '...' : d.reasonDetails;
-
-                return '<tr>' +
-                    '<td style="font-weight:600;color:#c084fc;font-size:10px;">' + d.dnNo + '</td>' +
-                    '<td>' + d.dnDate + '</td>' +
-                    '<td>' + d.vendor + '</td>' +
-                    '<td style="font-size:10px;">' + d.invoiceNo + '</td>' +
-                    '<td style="text-align:right;font-weight:600;color:#e9d5ff;">' + d.dnAmount.toLocaleString('de-DE', {minimumFractionDigits:2}) + '</td>' +
-                    '<td style="font-size:10px;">' + d.reasonCategory + '</td>' +
-                    '<td>' + d.department + '</td>' +
-                    '<td style="font-weight:600;">' + d.l1Approver + '</td>' +
-                    '<td>' + statusBadge + '</td>' +
-                    '<td style="text-align:center;">' + daysBadge + '</td>' +
-                    '<td>' + slaBadge + '</td>' +
-                    '<td style="font-size:9px;color:#8b8ba3;max-width:180px;overflow:hidden;text-overflow:ellipsis;" title="' + d.reasonDetails.replace(/"/g, '&quot;') + '">' + reasonShort + '</td>' +
-                    '</tr>';
-            }).join('');
-        }
-
-        // Charts
-        renderDNVendorChart(filtered);
-        renderDNReasonChart(filtered);
-        renderDNAgingChart(filtered);
-        renderDNPipelineChart(all);
-        renderDNDeptSummary(filtered);
-        renderDNVendorSummary(filtered);
-    }
-
-    function renderDNBottleneck(data) {
-        const el = document.getElementById('dnBottleneckContent');
-        if (!el) return;
-        const stuckL1 = data.filter(d => d.overallStatus.toLowerCase().includes('l1'));
-        const stuckL2 = data.filter(d => d.overallStatus.toLowerCase().includes('l2'));
-        const l1Amt = stuckL1.reduce((s, d) => s + d.dnAmount, 0);
-        const l2Amt = stuckL2.reduce((s, d) => s + d.dnAmount, 0);
-        const oldest = data.reduce((max, d) => d.daysPending > max.daysPending ? d : max, data[0] || {});
-        const biggestAmt = data.reduce((max, d) => d.dnAmount > max.dnAmount ? d : max, data[0] || {});
-
-        // Group by approver for L1 stuck
-        const approverStuck = {};
-        stuckL1.forEach(d => {
-            if (!approverStuck[d.l1Approver]) approverStuck[d.l1Approver] = { count: 0, value: 0, maxDays: 0 };
-            approverStuck[d.l1Approver].count++;
-            approverStuck[d.l1Approver].value += d.dnAmount;
-            approverStuck[d.l1Approver].maxDays = Math.max(approverStuck[d.l1Approver].maxDays, d.daysPending);
-        });
-
-        const fmt = v => '€' + v.toLocaleString('de-DE', {minimumFractionDigits:0});
-        let html = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">';
-        html += '<div style="background:rgba(239,68,68,0.08);padding:10px;border-radius:8px;border-left:3px solid #ef4444;"><div style="font-size:18px;font-weight:700;color:#f87171;">' + stuckL1.length + '</div><div style="font-size:10px;color:#8b8ba3;">Stuck at L1 (Dept)</div><div style="font-size:10px;color:#fbbf24;">' + fmt(l1Amt) + '</div></div>';
-        html += '<div style="background:rgba(168,85,247,0.08);padding:10px;border-radius:8px;border-left:3px solid #a855f7;"><div style="font-size:18px;font-weight:700;color:#c084fc;">' + stuckL2.length + '</div><div style="font-size:10px;color:#8b8ba3;">Stuck at L2 (Finance)</div><div style="font-size:10px;color:#fbbf24;">' + fmt(l2Amt) + '</div></div>';
-        html += '</div>';
-
-        if (Object.keys(approverStuck).length > 0) {
-            html += '<div style="font-size:11px;font-weight:600;color:#f87171;margin-bottom:6px;">L1 Bottleneck by Approver:</div>';
-            Object.entries(approverStuck).sort((a,b) => b[1].value - a[1].value).forEach(([name, s]) => {
-                const barPct = Math.min(100, (s.value / l1Amt) * 100);
-                html += '<div style="margin-bottom:6px;"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px;"><span style="font-weight:600;color:#e2e8f0;">' + name + '</span><span style="color:#fbbf24;">' + s.count + ' DNs · ' + fmt(s.value) + ' · Max ' + s.maxDays + 'd</span></div>';
-                html += '<div style="height:6px;background:rgba(239,68,68,0.1);border-radius:3px;overflow:hidden;"><div style="height:100%;width:' + barPct + '%;background:linear-gradient(90deg,#ef4444,#f59e0b);border-radius:3px;"></div></div></div>';
-            });
-        }
-
-        if (oldest && oldest.dnNo) {
-            html += '<div style="margin-top:10px;padding:8px;background:rgba(239,68,68,0.06);border-radius:6px;font-size:10px;color:#fca5a5;">Oldest DN: <strong>' + oldest.dnNo + '</strong> (' + oldest.vendor + ') — <strong>' + oldest.daysPending + ' days</strong> pending with ' + oldest.l1Approver + '</div>';
-        }
-        if (biggestAmt && biggestAmt.dnNo && biggestAmt.dnNo !== oldest?.dnNo) {
-            html += '<div style="margin-top:4px;padding:8px;background:rgba(245,158,11,0.06);border-radius:6px;font-size:10px;color:#fde68a;">Largest DN: <strong>' + biggestAmt.dnNo + '</strong> (' + biggestAmt.vendor + ') — <strong>' + fmt(biggestAmt.dnAmount) + '</strong></div>';
-        }
-        el.innerHTML = html;
-    }
-
-    function renderDNSLASummary(data) {
-        const el = document.getElementById('dnSLAContent');
-        if (!el) return;
-        const breached = data.filter(d => d.slaStatus.toLowerCase().includes('breached'));
-        const within = data.filter(d => !d.slaStatus.toLowerCase().includes('breached'));
-        const breachRate = data.length > 0 ? ((breached.length / data.length) * 100).toFixed(0) : 0;
-        const fmt = v => '€' + v.toLocaleString('de-DE', {minimumFractionDigits:0});
-
-        const agingBuckets = { '0-30d': 0, '31-60d': 0, '61-90d': 0, '91-120d': 0, '121-180d': 0, '180+d': 0 };
-        breached.forEach(d => {
-            const dp = d.daysPending;
-            if (dp <= 30) agingBuckets['0-30d']++;
-            else if (dp <= 60) agingBuckets['31-60d']++;
-            else if (dp <= 90) agingBuckets['61-90d']++;
-            else if (dp <= 120) agingBuckets['91-120d']++;
-            else if (dp <= 180) agingBuckets['121-180d']++;
-            else agingBuckets['180+d']++;
-        });
-
-        let html = '<div style="display:flex;gap:12px;margin-bottom:12px;">';
-        html += '<div style="flex:1;background:rgba(239,68,68,0.08);padding:10px;border-radius:8px;text-align:center;"><div style="font-size:24px;font-weight:700;color:#f87171;">' + breachRate + '%</div><div style="font-size:10px;color:#8b8ba3;">SLA Breach Rate</div></div>';
-        html += '<div style="flex:1;background:rgba(239,68,68,0.08);padding:10px;border-radius:8px;text-align:center;"><div style="font-size:24px;font-weight:700;color:#f87171;">' + breached.length + '</div><div style="font-size:10px;color:#8b8ba3;">Breached</div></div>';
-        html += '<div style="flex:1;background:rgba(16,185,129,0.08);padding:10px;border-radius:8px;text-align:center;"><div style="font-size:24px;font-weight:700;color:#34d399;">' + within.length + '</div><div style="font-size:10px;color:#8b8ba3;">Within SLA</div></div>';
-        html += '</div>';
-
-        html += '<div style="font-size:11px;font-weight:600;color:#fbbf24;margin-bottom:6px;">Breached DNs by Aging:</div>';
-        html += '<div style="display:flex;gap:6px;flex-wrap:wrap;">';
-        const agingColors = ['#10b981','#06b6d4','#3b82f6','#f59e0b','#ef4444','#dc2626'];
-        Object.entries(agingBuckets).forEach(([bucket, count], i) => {
-            if (count > 0) html += '<div style="padding:4px 10px;background:rgba(255,255,255,0.05);border-radius:6px;border-left:3px solid ' + agingColors[i] + ';font-size:10px;"><strong style="color:' + agingColors[i] + ';">' + count + '</strong> <span style="color:#8b8ba3;">' + bucket + '</span></div>';
-        });
-        html += '</div>';
-
-        if (breached.length > 0) {
-            const totalBreachedAmt = breached.reduce((s, d) => s + d.dnAmount, 0);
-            html += '<div style="margin-top:10px;padding:8px;background:rgba(239,68,68,0.06);border-radius:6px;font-size:10px;color:#fca5a5;">Total breached value: <strong>' + fmt(totalBreachedAmt) + '</strong> — All ' + breached.length + ' DNs are marked High Priority and require immediate action.</div>';
-        }
-        el.innerHTML = html;
-    }
-
-    function renderDNApproverHeatmap(data) {
-        const el = document.getElementById('dnApproverHeatmap');
-        if (!el) return;
-        const approvers = {};
-        data.forEach(d => {
-            const name = d.l1Approver || 'Unknown';
-            if (!approvers[name]) approvers[name] = { total: 0, pending: 0, approved: 0, value: 0, days: [], maxDays: 0, depts: new Set(), breached: 0 };
-            approvers[name].total++;
-            if (d.l1Status.toLowerCase() === 'pending') approvers[name].pending++;
-            if (d.l1Status.toLowerCase() === 'approved') approvers[name].approved++;
-            approvers[name].value += d.dnAmount;
-            approvers[name].days.push(d.daysPending);
-            approvers[name].maxDays = Math.max(approvers[name].maxDays, d.daysPending);
-            approvers[name].depts.add(d.department);
-            if (d.slaStatus.toLowerCase().includes('breached')) approvers[name].breached++;
-        });
-
-        const fmt = v => '€' + v.toLocaleString('de-DE', {minimumFractionDigits:0});
-        el.innerHTML = Object.entries(approvers).sort((a, b) => b[1].pending - a[1].pending).map(([name, s]) => {
-            const avgDays = Math.round(s.days.reduce((a,b)=>a+b, 0) / s.days.length);
-            const severity = s.maxDays > 180 ? 'CRITICAL' : s.maxDays > 90 ? 'HIGH' : s.maxDays > 30 ? 'MEDIUM' : 'LOW';
-            const severityColor = severity === 'CRITICAL' ? '#dc2626' : severity === 'HIGH' ? '#ef4444' : severity === 'MEDIUM' ? '#f59e0b' : '#10b981';
-            const approvalRate = s.total > 0 ? ((s.approved / s.total) * 100).toFixed(0) : 0;
-            const barPct = Math.min(100, (s.pending / Math.max(1, ...Object.values(approvers).map(a => a.pending))) * 100);
-
-            return '<div style="background:rgba(15,23,42,0.8);border:1px solid rgba(168,85,247,0.12);border-radius:10px;padding:14px;border-left:4px solid ' + severityColor + ';">' +
-                '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">' +
-                '<div style="font-size:14px;font-weight:700;color:#e2e8f0;">' + name + '</div>' +
-                '<span class="dn-badge" style="background:rgba(255,255,255,0.05);color:' + severityColor + ';font-size:9px;letter-spacing:0.5px;">' + severity + '</span>' +
-                '</div>' +
-                '<div style="font-size:10px;color:#8b8ba3;margin-bottom:8px;">Dept: ' + [...s.depts].join(', ') + '</div>' +
-                '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:8px;">' +
-                '<div style="text-align:center;"><div style="font-size:16px;font-weight:700;color:#fbbf24;">' + s.pending + '</div><div style="font-size:9px;color:#8b8ba3;">Pending</div></div>' +
-                '<div style="text-align:center;"><div style="font-size:16px;font-weight:700;color:#34d399;">' + s.approved + '</div><div style="font-size:9px;color:#8b8ba3;">Approved</div></div>' +
-                '<div style="text-align:center;"><div style="font-size:16px;font-weight:700;color:#60a5fa;">' + avgDays + 'd</div><div style="font-size:9px;color:#8b8ba3;">Avg Days</div></div>' +
-                '<div style="text-align:center;"><div style="font-size:16px;font-weight:700;color:#f87171;">' + s.maxDays + 'd</div><div style="font-size:9px;color:#8b8ba3;">Max Days</div></div>' +
-                '</div>' +
-                '<div style="display:flex;justify-content:space-between;font-size:10px;color:#8b8ba3;margin-bottom:3px;"><span>Pending value: <strong style="color:#fbbf24;">' + fmt(s.value) + '</strong></span><span>Approval Rate: <strong style="color:' + (approvalRate > 50 ? '#34d399' : '#f87171') + ';">' + approvalRate + '%</strong></span></div>' +
-                '<div style="height:5px;background:rgba(168,85,247,0.1);border-radius:3px;overflow:hidden;"><div style="height:100%;width:' + barPct + '%;background:linear-gradient(90deg,' + severityColor + ',#f59e0b);border-radius:3px;"></div></div>' +
-                '<div style="margin-top:6px;font-size:9px;color:#f87171;">' + s.breached + ' of ' + s.total + ' SLA breached</div>' +
-                '</div>';
-        }).join('');
-    }
-
-    let dnPipelineChart = null;
-    function renderDNPipelineChart(data) {
-        const l1Pending = data.filter(d => d.overallStatus.toLowerCase().includes('l1')).length;
-        const l2Pending = data.filter(d => d.overallStatus.toLowerCase().includes('l2')).length;
-        const l1Approved = data.filter(d => d.l1Status.toLowerCase() === 'approved').length;
-        const settled = data.filter(d => d.settlementStatus.toLowerCase() === 'settled').length;
-
-        if (dnPipelineChart) dnPipelineChart.destroy();
-        const ctx = document.getElementById('dnPipelineChart');
-        if (!ctx) return;
-        dnPipelineChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Pending L1\n(Dept Review)', 'L1 Approved', 'Pending L2\n(Finance)', 'Settled'],
-                datasets: [{
-                    data: [l1Pending, l1Approved, l2Pending, settled],
-                    backgroundColor: ['#ef4444', '#10b981', '#a855f7', '#06b6d4'],
-                    borderRadius: 8, barThickness: 50
-                }]
-            },
-            options: {
-                responsive: true, maintainAspectRatio: false,
-                scales: {
-                    y: { beginAtZero: true, ticks: { color: '#8b8ba3', stepSize: 1 }, grid: { color: 'rgba(168,85,247,0.08)' } },
-                    x: { ticks: { color: '#c8c8e0', font: { size: 10 } }, grid: { display: false } }
-                },
-                plugins: { legend: { display: false } }
-            }
-        });
-    }
-
-    function renderDNVendorChart(data) {
-        const vendorTotals = {};
-        data.forEach(d => { vendorTotals[d.vendor] = (vendorTotals[d.vendor] || 0) + d.dnAmount; });
-        const sorted = Object.entries(vendorTotals).sort((a, b) => b[1] - a[1]);
-        const labels = sorted.map(e => e[0]);
-        const values = sorted.map(e => e[1]);
-        const colors = ['#a855f7', '#6366f1', '#3b82f6', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#ec4899'];
-
-        if (dnVendorChart) dnVendorChart.destroy();
-        const ctx = document.getElementById('dnVendorChart');
-        if (!ctx) return;
-        dnVendorChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: { labels, datasets: [{ data: values, backgroundColor: colors.slice(0, labels.length), borderWidth: 0 }] },
-            options: { responsive: true, maintainAspectRatio: false, plugins: {
-                legend: { position: 'right', labels: { color: '#c8c8e0', font: { size: 10 }, padding: 8 } },
-                tooltip: { callbacks: { label: ctx => ctx.label + ': €' + ctx.parsed.toLocaleString('de-DE', {minimumFractionDigits:0}) } }
-            }}
-        });
-    }
-
-    function renderDNReasonChart(data) {
-        const reasonTotals = {};
-        data.forEach(d => { const r = d.reasonCategory || 'Other'; reasonTotals[r] = (reasonTotals[r] || 0) + d.dnAmount; });
-        const sorted = Object.entries(reasonTotals).sort((a, b) => b[1] - a[1]);
-        const colors = ['#f59e0b', '#ef4444', '#a855f7', '#3b82f6', '#10b981', '#ec4899', '#6366f1', '#06b6d4'];
-
-        if (dnReasonChart) dnReasonChart.destroy();
-        const ctx = document.getElementById('dnReasonChart');
-        if (!ctx) return;
-        dnReasonChart = new Chart(ctx, {
-            type: 'bar',
-            data: { labels: sorted.map(e => e[0]), datasets: [{ label: 'DN Amount (€)', data: sorted.map(e => e[1]), backgroundColor: colors.slice(0, sorted.length), borderRadius: 6, barThickness: 28 }] },
-            options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-                scales: {
-                    x: { ticks: { color: '#8b8ba3', font: { size: 10 }, callback: v => '€' + (v/1000).toFixed(0) + 'k' }, grid: { color: 'rgba(168,85,247,0.08)' } },
-                    y: { ticks: { color: '#c8c8e0', font: { size: 10 } }, grid: { display: false } }
-                },
-                plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => '€' + ctx.parsed.x.toLocaleString('de-DE', {minimumFractionDigits:0}) } } }
-            }
-        });
-    }
-
-    function renderDNAgingChart(data) {
-        const buckets = { '0-30d': 0, '31-60d': 0, '61-90d': 0, '91-120d': 0, '121-180d': 0, '180+d': 0 };
-        const bucketAmts = { '0-30d': 0, '31-60d': 0, '61-90d': 0, '91-120d': 0, '121-180d': 0, '180+d': 0 };
-        data.forEach(d => {
-            const dp = d.daysPending;
-            const key = dp <= 30 ? '0-30d' : dp <= 60 ? '31-60d' : dp <= 90 ? '61-90d' : dp <= 120 ? '91-120d' : dp <= 180 ? '121-180d' : '180+d';
-            buckets[key]++;
-            bucketAmts[key] += d.dnAmount;
-        });
-        const colors = ['#10b981', '#06b6d4', '#3b82f6', '#f59e0b', '#ef4444', '#dc2626'];
-
-        if (dnAgingChart) dnAgingChart.destroy();
-        const ctx = document.getElementById('dnAgingChart');
-        if (!ctx) return;
-        dnAgingChart = new Chart(ctx, {
-            type: 'bar',
-            data: { labels: Object.keys(buckets), datasets: [
-                { label: 'Count', data: Object.values(buckets), backgroundColor: colors, borderRadius: 6, barThickness: 36, yAxisID: 'y' },
-            ]},
-            options: { responsive: true, maintainAspectRatio: false,
-                scales: {
-                    y: { beginAtZero: true, ticks: { color: '#8b8ba3', stepSize: 1 }, grid: { color: 'rgba(168,85,247,0.08)' } },
-                    x: { ticks: { color: '#c8c8e0', font: { size: 10 } }, grid: { display: false } }
-                },
-                plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.parsed.y + ' DNs (€' + Math.round(Object.values(bucketAmts)[ctx.dataIndex]).toLocaleString('de-DE') + ')' } } }
-            }
-        });
-    }
-
-    function renderDNDeptSummary(data) {
-        const depts = {};
-        data.forEach(d => {
-            const dept = d.department || 'Unknown';
-            if (!depts[dept]) depts[dept] = { total: 0, value: 0, pending: 0, days: 0, maxDays: 0, approver: d.l1Approver, breached: 0 };
-            depts[dept].total++;
-            depts[dept].value += d.dnAmount;
-            if (d.overallStatus.toLowerCase().includes('pending')) depts[dept].pending++;
-            depts[dept].days += d.daysPending;
-            depts[dept].maxDays = Math.max(depts[dept].maxDays, d.daysPending);
-            if (d.slaStatus.toLowerCase().includes('breached')) depts[dept].breached++;
-        });
-        const tbody = document.getElementById('dnDeptBody');
-        if (!tbody) return;
-        tbody.innerHTML = Object.entries(depts).sort((a, b) => b[1].value - a[1].value).map(([dept, s]) => {
-            const avgDays = Math.round(s.days / s.total);
-            const slaColor = s.breached === s.total ? '#f87171' : s.breached > 0 ? '#fbbf24' : '#34d399';
-            return '<tr>' +
-                '<td style="font-weight:600;">' + dept + '</td>' +
-                '<td>' + s.approver + '</td>' +
-                '<td style="text-align:center;">' + s.total + '</td>' +
-                '<td style="text-align:right;">€' + s.value.toLocaleString('de-DE', {minimumFractionDigits:0}) + '</td>' +
-                '<td style="text-align:center;"><span class="dn-badge pending">' + s.pending + '</span></td>' +
-                '<td style="text-align:center;">' + avgDays + 'd</td>' +
-                '<td style="text-align:center;color:#f87171;font-weight:600;">' + s.maxDays + 'd</td>' +
-                '<td style="text-align:center;"><span style="color:' + slaColor + ';font-weight:600;font-size:10px;">' + s.breached + '/' + s.total + ' Breached</span></td>' +
-                '</tr>';
-        }).join('');
-    }
-
-    function renderDNVendorSummary(data) {
-        const vendors = {};
-        const totalValue = data.reduce((s, d) => s + d.dnAmount, 0);
-        data.forEach(d => {
-            const v = d.vendor || 'Unknown';
-            if (!vendors[v]) vendors[v] = { total: 0, value: 0, pending: 0, days: 0, oldestDN: '', maxDays: 0 };
-            vendors[v].total++;
-            vendors[v].value += d.dnAmount;
-            if (d.overallStatus.toLowerCase().includes('pending')) vendors[v].pending++;
-            vendors[v].days += d.daysPending;
-            if (d.daysPending > vendors[v].maxDays) { vendors[v].maxDays = d.daysPending; vendors[v].oldestDN = d.dnNo; }
-        });
-        const tbody = document.getElementById('dnVendorBody');
-        if (!tbody) return;
-        tbody.innerHTML = Object.entries(vendors).sort((a, b) => b[1].value - a[1].value).map(([vendor, s]) => '<tr>' +
-            '<td style="font-weight:600;">' + vendor + '</td>' +
-            '<td style="text-align:center;">' + s.total + '</td>' +
-            '<td style="text-align:right;">€' + s.value.toLocaleString('de-DE', {minimumFractionDigits:0}) + '</td>' +
-            '<td style="text-align:center;"><span class="dn-badge pending">' + s.pending + '</span></td>' +
-            '<td style="text-align:center;">' + (totalValue > 0 ? (s.value / totalValue * 100).toFixed(1) : 0) + '%</td>' +
-            '<td style="text-align:center;">' + Math.round(s.days / s.total) + 'd</td>' +
-            '<td style="font-size:10px;color:#f87171;" title="' + s.oldestDN + '">' + s.maxDays + 'd</td>' +
-            '</tr>'
-        ).join('');
-    }
-
-    function exportDNToExcel() {
-        if (DN_DATA.length === 0) return alert('No debit note data loaded');
-        const exportRows = getFilteredDN().map(d => ({
-            'DN No.': d.dnNo, 'DN Date': d.dnDate, 'Vendor': d.vendor,
-            'Invoice No.': d.invoiceNo, 'Invoice Date': d.invoiceDate,
-            'Invoice Amount (€)': d.invoiceAmount, 'DN Amount (€)': d.dnAmount,
-            'Reason Category': d.reasonCategory, 'Reason Details': d.reasonDetails,
-            'Department': d.department, 'L1 Approver': d.l1Approver, 'L1 Status': d.l1Status,
-            'L2 Approver': d.l2Approver, 'L2 Status': d.l2Status,
-            'Overall Status': d.overallStatus, 'Days Pending': d.daysPending,
-            'Priority': d.priority, 'SLA Status': d.slaStatus,
-            'Settlement Status': d.settlementStatus
-        }));
-        const wb = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(exportRows), 'Debit Notes');
-        XLSX.writeFile(wb, 'Debit_Notes_Export_' + new Date().toISOString().split('T')[0] + '.xlsx');
-    }
-
-    // ========== SAVE/LOAD DN DATA TO FIREBASE FOR PERSISTENCE ==========
-    function saveDNDataToFirebase() {
-        if (!db || DN_DATA.length === 0) {
-            console.warn('📝 DN Firebase save skipped: db=' + !!db + ', DN_DATA.length=' + DN_DATA.length);
-            return;
-        }
-        const ref = db.ref('ap_dashboard/dn_data');
-        ref.set({
-            data: JSON.stringify(DN_DATA),
-            updatedAt: new Date().toISOString(),
-            count: DN_DATA.length,
-            uploadedBy: 'dashboard_user'
-        }).then(() => {
-            console.log('📝 DN data saved to Firebase (' + DN_DATA.length + ' records)');
-            toast('Debit Note data synced to Firebase — ' + DN_DATA.length + ' records shared with team!', 'success');
-        }).catch(err => {
-            console.warn('DN Firebase save error:', err);
-            toast('Firebase sync failed: ' + err.message, 'error');
-        });
-    }
-
-    function loadDNDataFromFirebase() {
-        if (!db) {
-            console.warn('📝 DN Firebase load skipped: db not ready');
-            return;
-        }
-        db.ref('ap_dashboard/dn_data').once('value', snap => {
-            const val = snap.val();
-            if (val && val.data) {
-                try {
-                    const parsed = JSON.parse(val.data);
-                    if (parsed.length > 0) {
-                        DN_DATA = parsed;
-                        console.log('📝 Loaded', DN_DATA.length, 'DNs from Firebase (saved', val.updatedAt, ')');
-                        const refreshEl = document.getElementById('dnLastRefresh');
-                        if (refreshEl) refreshEl.textContent = new Date(val.updatedAt).toLocaleString();
-                        populateDNFilters();
-                        // Render if DN tab is visible, otherwise data is ready for when user switches
-                        if (document.getElementById('dn-dashboard-section')?.style.display !== 'none') {
-                            renderDNDashboard();
-                        }
-                        if (typeof updateSyncStatus === 'function') updateSyncStatus();
-                    }
-                } catch (e) { console.warn('DN Firebase parse error:', e); }
-            }
-        });
-    }
-
-    // Override parseDNExcel to auto-save to Firebase after successful parse
-    const _origParseDNExcel = parseDNExcel;
-    let _prevDNCount = 0;
-    let _prevDNTotal = 0;
-    let _lastDNFileName = '';
-    parseDNExcel = function(buf) {
-        // Capture previous state for change tracking
-        const prevCount = _prevDNCount;
-        const prevTotal = _prevDNTotal;
-        _origParseDNExcel(buf);
-        // Auto-save to Firebase so all team members get the latest data
-        if (DN_DATA.length > 0) {
-            saveDNDataToFirebase();
-            // Log to upload history
-            const totalValue = DN_DATA.reduce((s, d) => s + d.dnAmount, 0);
-            const pendingCount = DN_DATA.filter(d => d.overallStatus && d.overallStatus.toLowerCase().includes('pending')).length;
-            const breachedCount = DN_DATA.filter(d => d.slaStatus && d.slaStatus.toLowerCase().includes('breach')).length;
-            const dnSummary = DN_DATA.length + ' DNs, €' + totalValue.toLocaleString('de-DE', {minimumFractionDigits:0}) + ' total, ' + pendingCount + ' pending, ' + breachedCount + ' SLA breached';
-            let dnChanges = 'Initial upload';
-            if (prevCount > 0) {
-                const parts = [];
-                const countDiff = DN_DATA.length - prevCount;
-                const valDiff = totalValue - prevTotal;
-                if (countDiff !== 0) parts.push('DNs: ' + (countDiff > 0 ? '+' : '') + countDiff);
-                if (Math.abs(valDiff) > 10) parts.push('Value: ' + (valDiff >= 0 ? '+' : '') + '€' + valDiff.toLocaleString('de-DE', {minimumFractionDigits:0}));
-                dnChanges = parts.length > 0 ? parts.join(' | ') : 'No changes';
-            }
-            const fileName = _lastDNFileName || 'Debit Note Tracker.xlsx';
-            logUploadToFirebase('Debit Note', fileName, dnSummary, dnChanges);
-            _prevDNCount = DN_DATA.length;
-            _prevDNTotal = totalValue;
-        }
-    };
-
-    // Load DN data from Firebase on page load (wait for Firebase to initialize)
-    function initDNFromFirebase() {
-        if (db) {
-            loadDNDataFromFirebase();
-        } else {
-            // Retry until Firebase is ready (check every 500ms, max 10 retries)
-            let retries = 0;
-            const interval = setInterval(() => {
-                retries++;
-                if (db) {
-                    clearInterval(interval);
-                    loadDNDataFromFirebase();
-                } else if (retries >= 10) {
-                    clearInterval(interval);
-                    console.warn('📝 Firebase not ready after 5s, DN auto-load skipped');
-                }
-            }, 500);
-        }
-    }
-    initDNFromFirebase();
 
 
     // ========== PAYMENT PLANNER ==========
